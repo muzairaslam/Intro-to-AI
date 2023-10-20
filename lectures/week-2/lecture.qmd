@@ -1,0 +1,158 @@
+---
+title: "Introduction to AI"
+subtitle: Week 2
+format: revealjs
+---
+
+## This Lecture
+
+::: {.incremental}
+
+- Python Revision
+- Variables 
+- Loops
+- Conditional Statements
+
+:::
+
+## Variables for Numbers
+
+```{python}
+
+#| echo: true
+#| output-location: fragment
+
+weight = 150
+print(weight)
+```
+
+## Variables for Strings
+
+
+```{python}
+
+#| echo: true
+#| output-location: fragment
+
+name = "Uzair"
+print(name)
+```
+
+## Hands on Exercise
+
+<http://www.asmarterwaytolearn.com/python/3.html>
+
+
+## If, Elif, Else Statements
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+buy_score = 0
+donut_condition = "not fresh"
+donut_price = "low"
+
+if donut_condition == "fresh":
+  buy_score = 10
+elif donut_price == "low":
+  buy_score = 5
+else:
+  buy_score = 0
+
+print(buy_score)
+```
+
+
+## Hands on Exercise
+
+<http://www.asmarterwaytolearn.com/python/11.html>
+
+
+## for Loops
+
+- Suppose you want to check if a particular city is one of the 5 environmentally
+cleanest in the U.S
+
+
+- You've assigned the name of the city in question to the variable city_to_check. For example, you wrote…
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+city_to_check = "Tucson"
+```
+
+- And you've assigned the names of the 5 cleanest cities to the **list** `cleanest_cities`
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+cleanest_cities = ["Cheyenne", "Santa Fe", "Tucson", "Great Falls", "Honolulu"]
+```
+
+
+## How to check if cleanest_cities have city_to_check ?
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+for a_clean_city in cleanest_cities:
+  if city_to_check == a_clean_city:
+    print("It's one of the cleanest cities")
+    break
+```
+
+
+- Things to notice:
+- Line 1 ends in a colon.
+- Line 2 is indented, because it takes its orders from Line 1.
+- Line 3 has a deeper indent than Line 2, because it takes its orders from Line 2.
+
+## break statement
+
+- In the course of comparing the city in question against the list of clean cities, if Python finds a match, there's no point in continuing the loop.
+
+- So you stop the loop by adding a `break` statement
+
+
+## Let's get hands on!
+
+<http://www.asmarterwaytolearn.com/python/21.html>
+
+
+
+## for Loops nested
+
+- We can also run nested loops in Python
+
+
+## Example
+
+```{python}
+
+#| echo: true
+#| output-location: fragment
+
+first_names = ["Uzair ", "Ayesha ", "Abdul ", "Ali ", "Abdullah"]
+last_names = ["Aslam", "Imran", "Samad", "Imran"]
+full_names = []
+for a_first_name in first_names:
+  for a_last_name in last_names:
+    full_names.append(a_first_name + " " + a_last_name)
+print(full_names)
+```
+
+
+- The `inner loop` runs a complete cycle of iterations on each iteration of the `outer loop`.
+- The total combinations we get are 4 * 5 = 20
+
+## Let's get hands on!
+
+<http://www.asmarterwaytolearn.com/python/22.html>
+
+
+
