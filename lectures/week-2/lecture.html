@@ -423,11 +423,18 @@
 <h2>Variables for Strings</h2>
 <div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>name <span class="op">=</span> <span class="st">"Uzair"</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="bu">print</span>(name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-2"><a href="#cb3-2"></a>string_num <span class="op">=</span> <span class="st">"-8.087"</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="bu">print</span>(name)</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="bu">print</span>(string_num)</span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="bu">type</span>(string_num)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="2">
 <div class="cell-output cell-output-stdout">
-<pre><code>Uzair</code></pre>
+<pre><code>Uzair
+-8.087</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="26">
+<pre><code>str</code></pre>
 </div>
 </div>
 </section>
@@ -438,18 +445,18 @@
 <section id="if-elif-else-statements" class="slide level2">
 <h2>If, Elif, Else Statements</h2>
 <div class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a>buy_score <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>donut_condition <span class="op">=</span> <span class="st">"not fresh"</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a>donut_price <span class="op">=</span> <span class="st">"low"</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a></span>
-<span id="cb5-5"><a href="#cb5-5"></a><span class="cf">if</span> donut_condition <span class="op">==</span> <span class="st">"fresh"</span>:</span>
-<span id="cb5-6"><a href="#cb5-6"></a>  buy_score <span class="op">=</span> <span class="dv">10</span></span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="cf">elif</span> donut_price <span class="op">==</span> <span class="st">"low"</span>:</span>
-<span id="cb5-8"><a href="#cb5-8"></a>  buy_score <span class="op">=</span> <span class="dv">5</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="cf">else</span>:</span>
-<span id="cb5-10"><a href="#cb5-10"></a>  buy_score <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a></span>
-<span id="cb5-12"><a href="#cb5-12"></a><span class="bu">print</span>(buy_score)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a>buy_score <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a>donut_condition <span class="op">=</span> <span class="st">"not fresh"</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>donut_price <span class="op">=</span> <span class="st">"low"</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="cf">if</span> donut_condition <span class="op">==</span> <span class="st">"fresh"</span>:</span>
+<span id="cb6-6"><a href="#cb6-6"></a>  buy_score <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a><span class="cf">elif</span> donut_price <span class="op">==</span> <span class="st">"low"</span>:</span>
+<span id="cb6-8"><a href="#cb6-8"></a>  buy_score <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="cf">else</span>:</span>
+<span id="cb6-10"><a href="#cb6-10"></a>  buy_score <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="bu">print</span>(buy_score)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="3">
 <div class="cell-output cell-output-stdout">
@@ -468,7 +475,7 @@
 <li><p>You’ve assigned the name of the city in question to the variable city_to_check. For example, you wrote…</p></li>
 </ul>
 <div class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a>city_to_check <span class="op">=</span> <span class="st">"Tucson"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>city_to_check <span class="op">=</span> <span class="st">"Tucson"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="4">
 
@@ -477,7 +484,7 @@
 <li>And you’ve assigned the names of the 5 cleanest cities to the <strong>list</strong> <code>cleanest_cities</code></li>
 </ul>
 <div class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a>cleanest_cities <span class="op">=</span> [<span class="st">"Cheyenne"</span>, <span class="st">"Santa Fe"</span>, <span class="st">"Tucson"</span>, <span class="st">"Great Falls"</span>, <span class="st">"Honolulu"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>cleanest_cities <span class="op">=</span> [<span class="st">"Cheyenne"</span>, <span class="st">"Santa Fe"</span>, <span class="st">"Tucson"</span>, <span class="st">"Great Falls"</span>, <span class="st">"Honolulu"</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="5">
 
@@ -486,10 +493,10 @@
 <section id="how-to-check-if-cleanest_cities-have-city_to_check" class="slide level2">
 <h2>How to check if cleanest_cities have city_to_check ?</h2>
 <div class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="cf">for</span> a_clean_city <span class="kw">in</span> cleanest_cities:</span>
-<span id="cb9-2"><a href="#cb9-2"></a>  <span class="cf">if</span> city_to_check <span class="op">==</span> a_clean_city:</span>
-<span id="cb9-3"><a href="#cb9-3"></a>    <span class="bu">print</span>(<span class="st">"It's one of the cleanest cities"</span>)</span>
-<span id="cb9-4"><a href="#cb9-4"></a>    <span class="cf">break</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1"></a><span class="cf">for</span> a_clean_city <span class="kw">in</span> cleanest_cities:</span>
+<span id="cb10-2"><a href="#cb10-2"></a>  <span class="cf">if</span> city_to_check <span class="op">==</span> a_clean_city:</span>
+<span id="cb10-3"><a href="#cb10-3"></a>    <span class="bu">print</span>(<span class="st">"It's one of the cleanest cities"</span>)</span>
+<span id="cb10-4"><a href="#cb10-4"></a>    <span class="cf">break</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="6">
 <div class="cell-output cell-output-stdout">
@@ -523,13 +530,13 @@
 <section id="example" class="slide level2">
 <h2>Example</h2>
 <div class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>first_names <span class="op">=</span> [<span class="st">"Uzair "</span>, <span class="st">"Ayesha "</span>, <span class="st">"Abdul "</span>, <span class="st">"Ali "</span>, <span class="st">"Abdullah"</span>]</span>
-<span id="cb11-2"><a href="#cb11-2"></a>last_names <span class="op">=</span> [<span class="st">"Aslam"</span>, <span class="st">"Imran"</span>, <span class="st">"Samad"</span>, <span class="st">"Imran"</span>]</span>
-<span id="cb11-3"><a href="#cb11-3"></a>full_names <span class="op">=</span> []</span>
-<span id="cb11-4"><a href="#cb11-4"></a><span class="cf">for</span> a_first_name <span class="kw">in</span> first_names:</span>
-<span id="cb11-5"><a href="#cb11-5"></a>  <span class="cf">for</span> a_last_name <span class="kw">in</span> last_names:</span>
-<span id="cb11-6"><a href="#cb11-6"></a>    full_names.append(a_first_name <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> a_last_name)</span>
-<span id="cb11-7"><a href="#cb11-7"></a><span class="bu">print</span>(full_names)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1"></a>first_names <span class="op">=</span> [<span class="st">"Uzair "</span>, <span class="st">"Ayesha "</span>, <span class="st">"Abdul "</span>, <span class="st">"Ali "</span>, <span class="st">"Abdullah"</span>]</span>
+<span id="cb12-2"><a href="#cb12-2"></a>last_names <span class="op">=</span> [<span class="st">"Aslam"</span>, <span class="st">"Imran"</span>, <span class="st">"Samad"</span>, <span class="st">"Imran"</span>]</span>
+<span id="cb12-3"><a href="#cb12-3"></a>full_names <span class="op">=</span> []</span>
+<span id="cb12-4"><a href="#cb12-4"></a><span class="cf">for</span> a_first_name <span class="kw">in</span> first_names:</span>
+<span id="cb12-5"><a href="#cb12-5"></a>  <span class="cf">for</span> a_last_name <span class="kw">in</span> last_names:</span>
+<span id="cb12-6"><a href="#cb12-6"></a>    full_names.append(a_first_name <span class="op">+</span> <span class="st">" "</span> <span class="op">+</span> a_last_name)</span>
+<span id="cb12-7"><a href="#cb12-7"></a><span class="bu">print</span>(full_names)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell fragment" data-execution_count="7">
 <div class="cell-output cell-output-stdout">
@@ -544,6 +551,118 @@
 <section id="lets-get-hands-on-1" class="slide level2">
 <h2>Let’s get hands on!</h2>
 <p><a href="http://www.asmarterwaytolearn.com/python/22.html" class="uri">http://www.asmarterwaytolearn.com/python/22.html</a></p>
+</section>
+<section id="lists" class="slide level2">
+<h2>Lists</h2>
+<h3 id="getting-the-data">Getting the data</h3>
+<div class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># defining a list</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a>cities <span class="op">=</span> [</span>
+<span id="cb14-3"><a href="#cb14-3"></a>  <span class="st">"Atlanta"</span>, </span>
+<span id="cb14-4"><a href="#cb14-4"></a>  <span class="st">"Baltimore"</span>, </span>
+<span id="cb14-5"><a href="#cb14-5"></a>  <span class="st">"Chicago"</span>, </span>
+<span id="cb14-6"><a href="#cb14-6"></a>  <span class="st">"Denver"</span>, </span>
+<span id="cb14-7"><a href="#cb14-7"></a>  <span class="st">"Los Angeles"</span>, </span>
+<span id="cb14-8"><a href="#cb14-8"></a>  <span class="st">"Seattle"</span></span>
+<span id="cb14-9"><a href="#cb14-9"></a>  ]</span>
+<span id="cb14-10"><a href="#cb14-10"></a></span>
+<span id="cb14-11"><a href="#cb14-11"></a><span class="co"># getting the first element from the list</span></span>
+<span id="cb14-12"><a href="#cb14-12"></a><span class="bu">print</span>(<span class="st">"Welcome to "</span> <span class="op">+</span> cities[<span class="dv">0</span>])</span>
+<span id="cb14-13"><a href="#cb14-13"></a></span>
+<span id="cb14-14"><a href="#cb14-14"></a><span class="co"># getting the last element from the list</span></span>
+<span id="cb14-15"><a href="#cb14-15"></a><span class="bu">print</span>(<span class="st">"Welcome to "</span> <span class="op">+</span> cities[<span class="op">-</span><span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="8">
+<div class="cell-output cell-output-stdout">
+<pre><code>Welcome to Atlanta
+Welcome to Seattle</code></pre>
+</div>
+</div>
+</section>
+<section id="adding-the-data" class="slide level2">
+<h2>Adding the data</h2>
+<h3 id="appending-the-data">Appending the data</h3>
+<div class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a>cities.append(<span class="st">"New York"</span>)</span>
+<span id="cb16-2"><a href="#cb16-2"></a></span>
+<span id="cb16-3"><a href="#cb16-3"></a><span class="bu">print</span>(cities)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="9">
+<div class="cell-output cell-output-stdout">
+<pre><code>['Atlanta', 'Baltimore', 'Chicago', 'Denver', 'Los Angeles', 'Seattle', 'New York']</code></pre>
+</div>
+</div>
+<h3 id="inserting-the-data">Inserting the data</h3>
+<div class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1"></a>cities.insert(<span class="dv">1</span>, <span class="st">"Karachi"</span>)</span>
+<span id="cb18-2"><a href="#cb18-2"></a></span>
+<span id="cb18-3"><a href="#cb18-3"></a><span class="bu">print</span>(cities)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="10">
+<div class="cell-output cell-output-stdout">
+<pre><code>['Atlanta', 'Karachi', 'Baltimore', 'Chicago', 'Denver', 'Los Angeles', 'Seattle', 'New York']</code></pre>
+</div>
+</div>
+</section>
+<section id="lists-slicing" class="slide level2">
+<h2>Lists Slicing</h2>
+<div class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1"></a>cities <span class="op">=</span> [<span class="st">"Atlanta"</span>, <span class="st">"Baltimore"</span>, <span class="st">"Chicago"</span>, </span>
+<span id="cb20-2"><a href="#cb20-2"></a><span class="st">"Denver"</span>, <span class="st">"Los Angeles"</span>, <span class="st">"Seattle"</span>]</span>
+<span id="cb20-3"><a href="#cb20-3"></a><span class="bu">print</span>(cities)</span>
+<span id="cb20-4"><a href="#cb20-4"></a></span>
+<span id="cb20-5"><a href="#cb20-5"></a>smaller_list_of_cities <span class="op">=</span> cities[<span class="dv">2</span>:<span class="dv">5</span>]</span>
+<span id="cb20-6"><a href="#cb20-6"></a><span class="bu">print</span>(smaller_list_of_cities)</span>
+<span id="cb20-7"><a href="#cb20-7"></a></span>
+<span id="cb20-8"><a href="#cb20-8"></a><span class="co"># omitting first number</span></span>
+<span id="cb20-9"><a href="#cb20-9"></a>smaller_list_of_cities_2 <span class="op">=</span> cities[:<span class="dv">5</span>]</span>
+<span id="cb20-10"><a href="#cb20-10"></a><span class="bu">print</span>(smaller_list_of_cities_2)</span>
+<span id="cb20-11"><a href="#cb20-11"></a></span>
+<span id="cb20-12"><a href="#cb20-12"></a><span class="co"># omitting last number</span></span>
+<span id="cb20-13"><a href="#cb20-13"></a>smaller_list_of_cities_3 <span class="op">=</span> cities[<span class="dv">2</span>:]</span>
+<span id="cb20-14"><a href="#cb20-14"></a><span class="bu">print</span>(smaller_list_of_cities_3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="11">
+<div class="cell-output cell-output-stdout">
+<pre><code>['Atlanta', 'Baltimore', 'Chicago', 'Denver', 'Los Angeles', 'Seattle']
+['Chicago', 'Denver', 'Los Angeles']
+['Atlanta', 'Baltimore', 'Chicago', 'Denver', 'Los Angeles']
+['Chicago', 'Denver', 'Los Angeles', 'Seattle']</code></pre>
+</div>
+</div>
+</section>
+<section id="lists-deletion" class="slide level2">
+<h2>Lists Deletion</h2>
+<div class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1"></a>cities <span class="op">=</span> [<span class="st">"Atlanta"</span>, <span class="st">"Baltimore"</span>, <span class="st">"Chicago"</span>, </span>
+<span id="cb22-2"><a href="#cb22-2"></a><span class="st">"Denver"</span>, <span class="st">"Los Angeles"</span>, <span class="st">"Seattle"</span>]</span>
+<span id="cb22-3"><a href="#cb22-3"></a><span class="bu">print</span>(cities)</span>
+<span id="cb22-4"><a href="#cb22-4"></a></span>
+<span id="cb22-5"><a href="#cb22-5"></a></span>
+<span id="cb22-6"><a href="#cb22-6"></a><span class="kw">del</span> cities[<span class="dv">3</span>]</span>
+<span id="cb22-7"><a href="#cb22-7"></a><span class="bu">print</span>(cities)</span>
+<span id="cb22-8"><a href="#cb22-8"></a></span>
+<span id="cb22-9"><a href="#cb22-9"></a>cities.remove(<span class="st">"Los Angeles"</span>)</span>
+<span id="cb22-10"><a href="#cb22-10"></a><span class="bu">print</span>(cities)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell fragment" data-execution_count="12">
+<div class="cell-output cell-output-stdout">
+<pre><code>['Atlanta', 'Baltimore', 'Chicago', 'Denver', 'Los Angeles', 'Seattle']
+['Atlanta', 'Baltimore', 'Chicago', 'Los Angeles', 'Seattle']
+['Atlanta', 'Baltimore', 'Chicago', 'Seattle']</code></pre>
+</div>
+</div>
+</section>
+<section id="lets-get-hands-on-2" class="slide level2">
+<h2>Let’s get hands on!</h2>
+<div>
+<ul>
+<li class="fragment"><p>lists creation: <a href="http://www.asmarterwaytolearn.com/python/15.html" class="uri">http://www.asmarterwaytolearn.com/python/15.html</a></p></li>
+<li class="fragment"><p>Adding and Changing Lists Elements: <a href="http://www.asmarterwaytolearn.com/python/16.html" class="uri">http://www.asmarterwaytolearn.com/python/16.html</a></p></li>
+<li class="fragment"><p>Slicing the lists: <a href="http://www.asmarterwaytolearn.com/python/17.html" class="uri">http://www.asmarterwaytolearn.com/python/17.html</a></p></li>
+<li class="fragment"><p>Deleting and Removing the elements: <a href="http://www.asmarterwaytolearn.com/python/18.html" class="uri">http://www.asmarterwaytolearn.com/python/18.html</a></p></li>
+</ul>
+</div>
 <div class="footer footer-default">
 
 </div>

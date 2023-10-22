@@ -35,7 +35,10 @@ print(weight)
 #| output-location: fragment
 
 name = "Uzair"
+string_num = "-8.087"
 print(name)
+print(string_num)
+type(string_num)
 ```
 
 ## Hands on Exercise
@@ -155,4 +158,116 @@ print(full_names)
 <http://www.asmarterwaytolearn.com/python/22.html>
 
 
+## Lists 
 
+### Getting the data
+
+
+```{python}
+
+#| echo: true
+#| output-location: fragment
+
+# defining a list
+cities = [
+  "Atlanta", 
+  "Baltimore", 
+  "Chicago", 
+  "Denver", 
+  "Los Angeles", 
+  "Seattle"
+  ]
+
+# getting the first element from the list
+print("Welcome to " + cities[0])
+
+# getting the last element from the list
+print("Welcome to " + cities[-1])
+
+```
+
+
+## Adding the data
+
+### Appending the data
+```{python}
+#| echo: true
+#| output-location: fragment
+
+
+cities.append("New York")
+
+print(cities)
+```
+
+### Inserting the data
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+cities.insert(1, "Karachi")
+
+print(cities)
+```
+
+
+## Lists Slicing
+
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+cities = ["Atlanta", "Baltimore", "Chicago", 
+"Denver", "Los Angeles", "Seattle"]
+print(cities)
+
+smaller_list_of_cities = cities[2:5]
+print(smaller_list_of_cities)
+
+# omitting first number
+smaller_list_of_cities_2 = cities[:5]
+print(smaller_list_of_cities_2)
+
+# omitting last number
+smaller_list_of_cities_3 = cities[2:]
+print(smaller_list_of_cities_3)
+
+
+```
+
+## Lists Deletion
+
+```{python}
+#| echo: true
+#| output-location: fragment
+
+cities = ["Atlanta", "Baltimore", "Chicago", 
+"Denver", "Los Angeles", "Seattle"]
+print(cities)
+
+
+del cities[3]
+print(cities)
+
+cities.remove("Los Angeles")
+print(cities)
+```
+
+
+
+## Let's get hands on!
+
+::: {.incremental}
+
+- lists creation: <http://www.asmarterwaytolearn.com/python/15.html>
+
+- Adding and Changing Lists Elements: <http://www.asmarterwaytolearn.com/python/16.html>
+
+- Slicing the lists: <http://www.asmarterwaytolearn.com/python/17.html>
+
+- Deleting and Removing the elements: <http://www.asmarterwaytolearn.com/python/18.html>
+
+:::
